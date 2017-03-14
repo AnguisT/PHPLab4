@@ -18,11 +18,6 @@
             echo "No";
             exit();
         }
-        $ver = mysql_query("select version()");
-        if(!$ver){
-            echo "error";
-            exit();
-        }
         
         $selectCar = mysql_query("select * from car");
         if(! $selectCar){
